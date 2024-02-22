@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@200;300;400;500;600;7oo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" , sans-serif;
+}
+
+body{
+    background: rgb(235, 232, 232);
+    width: 100%;
+    min-height: 100vh;
+}
+
+footer{
+    background: #ff0000;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    background: #fff;
+    top: 100px;
+    height: 1px;
+    width: 100%;
+}
+
+footer .content{
+    margin: auto;
+    max-width: 1250px;
+    padding: 30px 40px 40px 40px;
+}
+
+footer .content .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.content .top .logo-details{
+    color: #fff;
+    font-size: 30px;
+}
+
+.content .top .logo-details:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+.content .top .media-icons{
+    display: flex;
+}
+
+.content .top .media-icons a{
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.top .media-icons a:nth-child(1){
+    background: #4267b2;
+}
+.top .media-icons a:nth-child(1):hover{
+    background: #fff;
+    color: #4267b2;
+}
+
+.top .media-icons a:nth-child(2){
+    background: #1da1f2;
+}
+.top .media-icons a:nth-child(2):hover{
+    background: #fff;
+    color: #1da1f2;
+}
+
+.top .media-icons a:nth-child(3){
+    background: #e1306c;
+}
+.top .media-icons a:nth-child(3):hover{
+    background: #fff;
+    color: #e1306c;
+}
+
+.top .media-icons a:nth-child(4){
+    background: #0077b5;
+}
+.top .media-icons a:nth-child(4):hover{
+    background: #fff;
+    color: #0077b5;
+}
+
+.top .media-icons a:nth-child(5){
+    background: #ff0000ad;
+}
+.top .media-icons a:nth-child(5):hover{
+    background: #fff;
+    color: #f14406;
+}
+
+footer .content .link-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .content .link-boxes .box{
+    width: calc(100% / 5 - 10px);
+}
+
+.content .link-boxes .box .link_name{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.content .link-boxes .box .link_name:hover{
+    color: #000;
+    transform: scale(1.2);
+}
+
+.link-boxes .box .link_name::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 50px;
+    background: #fff;
+}
+
+.content .link-boxes .box li{
+    margin: 6px 0;
+    list-style: none;
+}
+
+.content .link-boxes .box li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all o.4s ease;
+}
+
+.content .link-boxes .box li a:hover{
+    text-decoration: none;
+    opacity: 2;
+}
+
+.content .link-boxes .input-box{
+    margin-right: 55px;
+}
+
+.link-boxes .input-box input{
+    height: 40px;
+    width: calc(100% + 55px);
+    outline: none;
+    border: 2px solid #afaf86;
+    background: #140b5c;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.link-boxes .input-box input::placeholder{
+    color: #afaf86;
+    font-size: 16px;
+}
+
+.link-boxes .input-box input[type='button']{
+    background: #fff;
+    color: #140b5c;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.link-boxes .input-box input[type='button']:hover{
+    opacity: 1;
+}
+
+footer .bottom-details{
+    width: 100%;
+    background: #2c303a;
+}
+
+.content .logo-details{
+    color: #fff;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .logo-details:hover{
+    color: #000;
+    cursor: pointer;
+}
